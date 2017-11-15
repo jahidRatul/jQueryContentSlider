@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery content slider</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .red{color: red;}
+            .green{color: green;}
+        </style>
+        
+        <script>
+            $(document).ready(function(){
+                $('.myLink').mouseenter(function(){
+                   $('h1').addClass('red');
+                    });
+                
+                $('.myLink').mouseleave(function(){
+                   $('h1').removeClass('red'); 
+                });
+                
+                $('.myLink').click(function(){
+                    $('h1').fadeToggle(500);
+                });
+                
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+        <h1> Welcome Everyone</h1>
+        <a href="#" class="myLink"> Click Me</a>
+    </body>
+          
+
+</html>
